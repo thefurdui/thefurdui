@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Optimized Block Element Modifier (OBEM) — Hyphen-Separated Words</title>
+    <meta
+      name="description"
+      content="A modern, single-file explainer of the OBEM (Optimized BEM) approach using hyphen-separated words for structured, maintainable CSS."
+    />
+    <link rel="stylesheet" href="blog.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <header class="hero">
+        <h1>Optimized Block Element Modifier (OBEM) with Hyphen-Separated Words</h1>
+        <p class="subtitle">A modern approach to structured, maintainable CSS using hyphen-separated class names.</p>
+        <p class="meta">
+          Created on 22 July 2023 by
+          <a href="https://x.com/thefurdui" target="_blank" rel="noopener noreferrer">@thefurdui</a>
+        </p>
+        <span class="tag" aria-label="Tag">#obem</span>
+      </header>
+
+      <div class="content">
+        <section id="introduction">
+          <h2>Introduction</h2>
+          <p>
+            Optimized Block Element Modifier (OBEM) with hyphen-separated words is an advanced variation of the Block
+            Element Modifier (BEM) methodology, meticulously designed to create a structured and highly efficient CSS
+            codebase. This approach uses hyphens (
+            <code>-</code>
+            ) as separators in class names, empowering developers with a more organized and intuitive way to manage CSS
+            styles.
+          </p>
+        </section>
+
+        <section id="embracing-hyphens">
+          <h2>Embracing Hyphen-Separated Words for Enhanced Structure and Efficiency</h2>
+          <p>
+            In this optimized OBEM variation, we use hyphens to separate words in class names, ensuring a clear and
+            meaningful representation of the elements. The format is as follows:
+          </p>
+          <pre><code>.my_element {} /* Represents a block, a stand-alone, meaningful component. */
+.my_element-children {} /* Represents a child element within the `my_element` block. */
+.my_element-children--modifier {} /* Represents a modifier that alters the appearance or behavior of the `my_element-children` element. */</code></pre>
+          <p>
+            By adopting hyphen-separated words, our CSS class names become even more descriptive and well-structured,
+            making it easier to understand the hierarchy of blocks, elements, and modifiers.
+          </p>
+        </section>
+
+        <section id="syntax-agnostic">
+          <h2>BEM's Syntax Agnostic Nature</h2>
+          <p>
+            It's essential to note that BEM, the Block Element Modifier methodology, is inherently syntax agnostic.
+            While we have discussed the optimized OBEM with hyphen-separated words as an advanced variation, it's
+            important to highlight that this custom BEM syntax, such as
+            <code>.my_element-children--modifier</code>
+            , remains perfectly valid.
+          </p>
+        </section>
+
+        <section id="efficient-selection">
+          <h2>Efficient Selection of Logical Entities</h2>
+          <p>
+            One significant advantage of using optimized OBEM with hyphen-separated words is the efficient selection of
+            logical entities using keyboard shortcuts. On macOS, you can use
+            <kbd>Cmd</kbd>
+            +
+            <kbd>D</kbd>
+            ("Multi-Cursor" / "Multiple Selection") in code editors to quickly select all occurrences of a particular
+            logical entity, such as a parent block, child element, or modifier.
+          </p>
+          <p>
+            For example, with
+            <kbd>Cmd</kbd>
+            +
+            <kbd>D</kbd>
+            , you can effortlessly select and modify all instances of a specific block (
+            <code>my_element</code>
+            ), all child elements (
+            <code>my_element-children</code>
+            ), or all occurrences of a particular modifier (
+            <code>my_element-children--modifier</code>
+            ). This efficient selection drastically reduces development time and ensures consistent styling across the
+            project.
+          </p>
+        </section>
+
+        <section id="benefits">
+          <h2>Benefits</h2>
+          <ul>
+            <li>
+              <strong>Highly Efficient Codebase</strong>
+              : Optimized OBEM with hyphen-separated words promotes a highly efficient and organized CSS codebase,
+              enabling better performance and faster rendering.
+            </li>
+            <li>
+              <strong>Maintainability</strong>
+              : The descriptive class names improve maintainability, enabling developers to quickly identify and modify
+              specific elements.
+            </li>
+            <li>
+              <strong>Readability</strong>
+              : Clear and meaningful class names enhance code readability, contributing to better collaboration and
+              reduced errors.
+            </li>
+          </ul>
+        </section>
+
+        <section id="demo">
+          <h2>Live Naming Demo (OBEM)</h2>
+          <p class="hint">
+            A tiny illustrative component showing
+            <code>.my_element</code>
+            ,
+            <code>.my_element-children</code>
+            , and a modifier
+            <code>.my_element-children--modifier</code>
+            .
+          </p>
+          <div class="demo">
+            <div class="card">
+              <div class="my_element">
+                <h3 class="my_element-title">my_element (Block)</h3>
+                <div class="my_element-children">
+                  <div class="my_element-children-item">item</div>
+                  <div class="my_element-children-item">item</div>
+                  <div class="my_element-children-item">item</div>
+                </div>
+                <div class="my_element-children my_element-children--modifier">
+                  <div class="my_element-children-item">item (modifier)</div>
+                  <div class="my_element-children-item">item (modifier)</div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h3 style="margin: 0 0 8px">Copy‑paste snippet</h3>
+              <pre><code>&lt;div class="my_element"&gt;
+  &lt;h3 class="my_element-title"&gt;my_element (Block)&lt;/h3&gt;
+  &lt;div class="my_element-children"&gt;
+    &lt;div class="my_element-children-item"&gt;item&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="my_element-children my_element-children--modifier"&gt;
+    &lt;div class="my_element-children-item"&gt;item (modifier)&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <section id="conclusion">
+          <h2>Conclusion</h2>
+          <p>
+            Optimized Block Element Modifier (OBEM) with hyphen-separated words offers a powerful and modern approach to
+            writing structured CSS code. By embracing this variation, we elevate the maintainability and scalability of
+            our projects while adhering to the core principles that make OBEM a reliable and effective methodology for
+            managing CSS styles. Additionally, the efficient selection of logical entities using
+            <kbd>Cmd</kbd>
+            +
+            <kbd>D</kbd>
+            further enhances our development workflow and productivity, setting the stage for successful and streamlined
+            CSS development.
+          </p>
+        </section>
+
+        <p class="footer">
+          ©
+          <span id="year"></span>
+          by
+          <a href="https://x.com/thefurdui" target="_blank" rel="noopener noreferrer">@thefurdui</a>
+          — Sharing ideas for better CSS architecture.
+        </p>
+      </div>
+    </main>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear()
+    </script>
+  </body>
+</html>
