@@ -2,7 +2,7 @@
 
 case $1 in 
     "deploy")
-        scp index.html root@128.199.255.153:/var/www/thefurdui/index.html
+        scp -r index.html style.css blog assets root@128.199.255.153:/var/www/thefurdui
         echo "Deployed"
         ;;
     *)
